@@ -93,7 +93,7 @@ class Player {
     // draws text at top of canvas
     ctx.font = "22px 'Montserrat', sans-serif";
     ctx.fillText("Bugs Saved: " + this.water, 10, 20);
-    ctx.fillText(this.lives + " Lives Remaining", 305, 20);
+    ctx.fillText(this.lives + " Lives Remaining", 300, 20);
     ctx.fillText("Gems: " + this.gemScore, 10, 45);
     ctx.fillText("Points: " + this.points, 370, 45);
 // Game over screen
@@ -108,10 +108,6 @@ class Player {
       restartFail();
     }
   }
-// winning screen
-  //   if(this.water === 1){
-  //     }
-  // }
   // runs code for each direction key input with boundaries in game area
   handleInput(keyCode){
     if(keyCode == 'left' && (this.x > 1)){

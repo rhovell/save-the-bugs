@@ -381,18 +381,18 @@ var gemList = [new Gem(15, 132)];
   // addEventListener to next button to display instructions
   var next = document.getElementById('nextButton');
   next.addEventListener("click", swap);
-  var inst = document.getElementById('instr');
   // swaps out text in intro modal
     function swap(){
       intro.style.display = "none";
+      var inst = document.getElementById('instr');
       inst.style.display = "block";
-    }
       // sets delay to add event listeners to remove modal and
       // begin game (used delay as click on next button was reacting to event listener)
         var setEvnt = setTimeout( function(){
           window.addEventListener("click", hideModal);
         window.addEventListener("keyup", hideModal);
       },3000);
+    }
 // Hides modal
   function hideModal(){
     modal.style.display = "none";

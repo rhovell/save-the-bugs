@@ -1,3 +1,238 @@
 body {
     text-align: center;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+/* styling for intro modal */
+.modal {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  width: 340px;
+  height: 180px;
+  background-color: #FFFFFF;
+  font-size: 1em;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.modal-inner {
+  margin: 10px;
+}
+/* .container {
+} */
+.next {
+  position: relative;
+  bottom: 40px;
+  left: 140px;
+}
+button  {
+  background-color: transparent;
+  border: 0;
+}
+.next img {
+  height: 3em;
+}
+.instructions {
+  display: none;
+}
+/* keeps modal to central to canvas */
+@media screen and (min-width:900px){
+  .modal {
+    top: 40%;
+    left: 35%;
+}
+}
+
+/* winning modal styling */
+.win.container {
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  display: none;
+}
+.win-modal {
+  background-color: #FFFFFF;
+  width: 450px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+.modal-inner-win {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  flex-wrap: wrap;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.win-text {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+}
+.cong {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 1.5em;
+}
+.won {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.score {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#points {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-weight: bold;
+}
+.points-text {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.saved {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#bugs {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  font-weight: bold;
+}
+.bugs {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.fin {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+#lives {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  font-weight: bold;
+}
+.life {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.gem-area {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.gem-container {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  display: grid;
+  grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
+  flex-wrap: wrap;
+  margin: 0 2px;
+}
+.holder {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.multiplier {
+  width: 50%;
+  float: left;
+}
+.gem-score {
+  width: 50%;
+  float: right;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.blue.holder {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.multiplier.blue {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#blue-gem {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.orange.holder {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.multiplier.orange {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#orange-gem {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.green.holder {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.multiplier.green {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#green-gem {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.play-again {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  cursor: pointer;
 }

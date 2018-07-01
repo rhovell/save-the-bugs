@@ -1,6 +1,20 @@
-frontend-nanodegree-arcade-game
-===============================
+#Save The Bugs
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+##Instructions
+Can you get all 10 bugs to the water without being stepped on?
+If you loose 5 bugs, game over!
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+Use your direction keys to move your ladybird up, down, left and right.
+Get to the water without being stepped on by the humans!
+Remember to collect as many as gems as you can!
+
+##Scoring:
+Blue Gems : 50 points
+Orange Gems : 100 points
+Green Gems : 150 points
+Bug Saved : 200 points
+Bug Dies : -100 points   
+
+##Installation
+There is little set up necessary for this app, simply add all of the files to your website tree (remember to rename any files if you already have one with the same name), and make sure to link to all of the scripts in your main index.html file (or whichever page you wish to display it).
+If you wish to use the start modal too, copy the <div class = "container"> item from the index.html file in this app and add it to the same page. You can also use the styling in the style.css file under the section "styling for intro modal". 

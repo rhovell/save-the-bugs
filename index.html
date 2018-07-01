@@ -2,10 +2,67 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
+    <title>Save The Bugs!</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
+  <div class = "container">
+    <div class = "modal" id = "modalIntro">
+      <div class = "modal-inner">
+        <div class = "game-intro" id = "intro">Can you get all 10 bugs to the water without being stepped on?<br>
+          Collect as many points as you can!<br>
+          Blue Gems : 50 points<br>
+          Orange Gems : 100 points<br>
+          Green Gems : 150 points<br>
+          Bug Saved : 200 points<br>
+          Bug Dies : -100 points  <br>
+          <button class = "next"><img src = "images/next.png" id = "nextButton"></img></button></div>
+          <div class = "instructions" id = "instr">
+            Use your direction keys to move your ladybird up, down, left and right.<br>
+            Get to the water without being stepped on by the humans!<br>
+            You only have 5 lives!<br>
+            Remember to collect as many as gems as you can!<br>
+            Save 10 ladybirds to win!
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class = "win container" id = "winCon">
+  <div class = "win-modal" id = "winModal">
+    <div class = "modal-inner-win">
+      <!-- <div class = "win-text"> -->
+      <div class = "cong">Congratulations!</div><br>
+      <div class = "won">You Won!</div><br>
+      <div class = "score">You scored </div><div id = "points"></div><div class = "points-text"> points.</div><br>
+      <div class = "saved">You saved </div><div id = "bugs"></div> <div class = "bugs">bugs.</div><br>
+      <div class = "fin">You did it with </div><div id = "lives"></div><div class = "life"> lives left.</div>
+    <!-- </div> -->
+      <div class = "gem-area">Gems collected:</div>
+      <div class = "gem-container">
+        <div class = "blue holder">
+      <img src = "images/gem-blue.png" class = "win-gem"></img><br>
+      <div class = "multiplier blue">x </div><div id = "blue-gem" class = "gem-score"></div>
+    </div>
+          <div class = "orange holder">
+      <img src = "images/gem-orange.png" class = "win-gem"></img><br>
+      <div class = "multiplier orange">x </div><div id = "orange-gem" class = "gem-score"></div>
+    </div>
+          <div class = "green holder">
+      <img src = "images/gem-green.png" class = "win-gem"></img><br>
+      <div class = "multiplier green">x </div><div id = "green-gem" class = "gem-score"></div>
+    </div>
+    </div>
+    <div class = "play-again">
+      Would you like to <div id = "again">play again?</div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>

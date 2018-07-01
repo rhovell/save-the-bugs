@@ -132,7 +132,7 @@ class Player {
       this.points += 200;
       console.log("You saved a bug! Total bugs saved = " + this.water);
     // if water reached 10 times - load winning screen
-      if(this.water === 1){
+      if(this.water === 10){
         winanimation();
         // resets player position to avoid further collisions
         this.x = 200;
@@ -392,7 +392,7 @@ var gemList = [new Gem(15, 132)];
         var setEvnt = setTimeout( function(){
           window.addEventListener("click", hideModal);
         window.addEventListener("keyup", hideModal);
-      },1000);
+      },3000);
 // Hides modal
   function hideModal(){
     modal.style.display = "none";

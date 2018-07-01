@@ -386,13 +386,13 @@ var gemList = [new Gem(15, 132)];
     function swap(){
       intro.style.display = "none";
       inst.style.display = "block";
+    }
       // sets delay to add event listeners to remove modal and
       // begin game (used delay as click on next button was reacting to event listener)
         var setEvnt = setTimeout( function(){
           window.addEventListener("click", hideModal);
         window.addEventListener("keyup", hideModal);
       },1000);
-    }
 // Hides modal
   function hideModal(){
     modal.style.display = "none";

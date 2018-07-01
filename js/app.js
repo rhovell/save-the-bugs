@@ -250,6 +250,13 @@ function winanimation(){
   if(player.lives > 0){
     livesPrint.innerHTML = player.lives;
   }
+  var gemPrint = document.getElementById('gemTotal');
+  if(player.gemScore === 0){
+    gemPrint.innerHTML = 0;
+  }
+  if(player.gemScore > 0){
+    gemPrint.innerHTML = player.gemScore;
+  }
   var bluePrint = document.getElementById('blue-gem');
   if(player.blue === 0){
     bluePrint.innerHTML = 0;
@@ -391,7 +398,7 @@ var gemList = [new Gem(15, 132)];
         var setEvnt = setTimeout( function(){
           window.addEventListener("click", hideModal);
         window.addEventListener("keyup", hideModal);
-      },3000);
+      },1000);
     }
 // Hides modal
   function hideModal(){

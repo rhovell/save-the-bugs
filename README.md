@@ -25,9 +25,9 @@ There is little set up necessary for this app, simply add all of the files to yo
 If you wish to use the start modal too, copy the <div class = "container"> item from the index.html file in this app and add it to the same page. You can also use the styling in the style.css file under the section "styling for intro modal".
 
 ### Installation Task List
-- [] Add js folder to your website tree.
-- [] Add script link to all files within the js folder (eg. <script src="js/app.js"></script>) to the page you wish to display the app on.
+- [ ] Add js folder to your website tree.
+- [ ] Add script link to all files within the js folder (eg. <script src="js/app.js"></script>) to the page you wish to display the app on.
 #### Optionals -
-- [] Add the stylesheet to your css folder.
-- [] Add images to your images folder.
-- [] Add HTML from index.html to the page you wish to display the app on.
+- [ ] Add the stylesheet to your css folder.
+- [ ] Add images to your images folder.
+- [ ] Add HTML from index.html to the page you wish to display the app on.
